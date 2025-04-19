@@ -1,0 +1,17 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1220px;
+$lg: 1400px;
+$fhd: 1600px;
+
+:root {
+    --bg: #010602;
+    --text: #FFE7B9;
+    --container_padding: 15px;
+    --container_max_width: 1630px;
+    --primary_font: 'CookieRunOTF', Arial, sans-serif;
+    @media(min-width: $sm) {
+        --container_padding: 60px;
+    }
+}

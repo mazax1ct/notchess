@@ -1,0 +1,85 @@
+.section_3 {
+    background: url("../images/bg/section_3.jpg") no-repeat 50% 0 / cover;
+    max-height: 1702px;
+    padding-top: clamp(40px, 5vw, 120px);
+    padding-bottom: clamp(40px, 5vw, 120px);
+    position: relative;
+    z-index: 1;
+
+    .decor_1 {
+        background: url("../images/decor/crystal.png") no-repeat 0 0 / contain;
+        height: 20vw;
+        left: auto;
+        max-height: 420px;
+        max-width: 420px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(65%, -50%);
+        width: 20vw;
+        z-index: 1;
+    }
+
+    .decor_2 {
+        background: url("../images/decor/crystal_2.png") no-repeat 0 0 / contain;
+        bottom: 2vw;
+        height: 10vw;
+        left: 0;
+        max-height: 250px;
+        max-width: 250px;
+        position: absolute;
+        top: auto;
+        transform: translateX(-65%);
+        width: 10vw;
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        margin-bottom: 2em;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        .social {
+            display: block;
+            transition: transform 0.3s;
+            transform: translateY(0);
+            width: clamp(60px, 7.5vw, 140px);
+            @include hover {
+                transform: translateY(0.1em);
+            }
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+.feature {
+    align-items: center;
+    display: flex;
+    gap: clamp(20px, 5vw, 80px);
+
+    &:not(:last-child) {
+        margin-bottom: clamp(40px, 5vw, 80px);
+    }
+
+    &__image {
+        min-width: 100px;
+        width: clamp(100px, 11vw, 200px);
+
+        img {
+            filter: drop-shadow(0px 0px 80px rgba(255, 255, 255, 0.3));
+            display: block;
+        }
+    }
+}

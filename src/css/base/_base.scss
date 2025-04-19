@@ -1,0 +1,138 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    @include scrollbar;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: clamp(16px, 1.675vw, 32px);
+    font-family: var(--primary_font);
+    font-weight: 400;
+    line-height: 1.46;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+
+    &__content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1920px;
+        overflow: hidden;
+    }
+
+    &__section {}
+}
+
+.container {
+    max-width: var(--container_max_width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    font-size: clamp(24px, 3.125vw, 48px);
+    line-height: 1.33333;
+    margin-top: 0;
+    margin-bottom: 0.66667em;
+}
+
+.h1,
+.h2,
+h1,
+h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.h3,
+h3 {
+    font-weight: 400;
+}
+
+a {}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+svg {
+    transition: fill 0.3s;
+}
+
+*:focus {
+    outline: none;
+}
+
+button,
+input,
+textarea {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ol,
+ul {
+    &:not([class]) {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

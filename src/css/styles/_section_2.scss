@@ -1,0 +1,12 @@
+.section_2 {
+    background: url("../images/bg/section_2.jpg") no-repeat 50% 0 / cover;
+    color: #fff;
+    max-height: 1916px;
+    padding-top: clamp(150px, 20vw, 350px);
+    padding-bottom: clamp(40px, 5vw, 100px);
+
+    img {
+        display: block;
+        margin-bottom: 1.5em;
+    }
+}

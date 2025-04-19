@@ -1,0 +1,126 @@
+.section_4 {
+    background: url("../images/bg/section_4.jpg") no-repeat 50% 0 / cover;
+    color: #fff;
+    max-height: 1588px;
+    padding-top: clamp(40px, 5vw, 120px);
+    padding-bottom: clamp(40px, 5vw, 120px);
+
+    .btn_2 {
+        align-items: center;
+        background: url("../images/buttons/btn_2.png") no-repeat 50% 0 / 100% 100% transparent;
+        color: #fff;
+        display: inline-flex;
+        filter: drop-shadow(0px 4px 80px rgba(5, 255, 242, 0.65));
+        font-size: clamp(20px, 3.25vw, 54px);
+        font-weight: 700;
+        height: 3.15em;
+        padding-top: 0.225em;
+        padding-left: 1.1em;
+        padding-right: 1.1em;
+        -webkit-text-stroke: clamp(0.5px, 0.15vw, 3px) #017752;
+        text-stroke: clamp(0.5px, 0.15vw, 3px) #017752;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: transform 0.5s;
+        transform: translateY(0);
+        white-space: nowrap;
+        will-change: transform;
+        @include hover {
+            transform: translateY(0.1em);
+        }
+    }
+}
+
+.slider {
+    margin: clamp(40px, 5vw, 120px) auto;
+    position: relative;
+    z-index: 1;
+    @media(max-width: $sm - 0.02px) {
+        max-width: 345px;
+    }
+    @media(min-width: $sm) and (max-width: $md - 0.02px) {
+        max-width: 740px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        @include button-reset;
+        height: 49px;
+        width: 37px;
+        @media(min-width: $fhd) {
+            height: 98px;
+            width: 75px;
+        }
+        @include hover {
+            svg {
+                fill: #05FFF2;
+            }
+        }
+
+        svg {
+            fill: #fff;
+            height: 49px;
+            transition: fill 0.3s;
+            width: 37px;
+            @media(min-width: $fhd) {
+                height: 98px;
+                width: 75px;
+            }
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        @media(min-width: 1800px) {
+            right: -85px;
+        }
+    }
+
+    .swiper-button-prev {
+        @media(min-width: 1800px) {
+            left: -85px;
+        }
+    }
+}
+
+.card {
+    background: url("../images/bg/card.png") no-repeat 50% 0 / 100% 100% transparent;
+    color: #fff;
+    max-width: 470px;
+    max-height: 734px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: clamp(100px, 8vw, 150px);
+    padding-bottom: clamp(65px, 8vw, 100px);
+    text-align: center;
+    @media(max-width: $md - 0.02px) {
+        max-width: 345px;
+    }
+
+    &__image {
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+        width: 60%;
+
+        img {
+            display: block;
+        }
+    }
+
+    p {
+        font-size: clamp(16px, 1.675vw, 28px);
+        line-height: 1.35;
+        min-height: 5.4em;
+        padding-left: 2em;
+        padding-right: 2em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
