@@ -9,7 +9,8 @@ $fhd: 1600px;
     --bg: #010602;
     --text: #FFE7B9;
     --container_padding: 15px;
-    --container_max_width: 1630px;
+    //--container_max_width: 1630px;
+    --container_max_width: 1280px;
     --primary_font: 'CookieRunOTF', Arial, sans-serif;
     @media(min-width: $sm) {
         --container_padding: 60px;

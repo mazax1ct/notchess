@@ -52,7 +52,7 @@
             display: block;
             transition: transform 0.3s;
             transform: translateY(0);
-            width: clamp(60px, 7.5vw, 140px);
+            width: clamp(60px, 7.5vw, 100px);
             @include hover {
                 transform: translateY(0.1em);
             }
@@ -67,15 +67,15 @@
 .feature {
     align-items: center;
     display: flex;
-    gap: clamp(20px, 5vw, 80px);
+    gap: clamp(20px, 5vw, 40px);
 
     &:not(:last-child) {
-        margin-bottom: clamp(40px, 5vw, 80px);
+        margin-bottom: clamp(40px, 5vw, 40px);
     }
 
     &__image {
         min-width: 100px;
-        width: clamp(100px, 11vw, 200px);
+        width: clamp(100px, 11vw, 120px);
 
         img {
             filter: drop-shadow(0px 0px 80px rgba(255, 255, 255, 0.3));
