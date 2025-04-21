@@ -2,11 +2,11 @@
     background: url("../images/bg/section_5.jpg") no-repeat 50% 100% / cover;
     color: #fff;
     max-height: 1691px;
-    padding-top: clamp(40px, 8vw, 240px);
-    padding-bottom: clamp(40px, 25vw, 400px);
+    padding-top: clamp(40px, 8vw, 100px);
+    padding-bottom: clamp(40px, 8vw, 100px);
 
     &__inner {
-        margin-top: clamp(40px, 8vw, 120px);
+        margin-top: clamp(40px, 8vw, 80px);
         @media(min-width: $sm) {
             align-items: center;
             display: flex;
@@ -99,16 +99,13 @@
 
     &__right {
         max-width: 695px;
-        width: 45%;
+        width: 40%;
         @media(max-width: $sm - 0.02px) {
             max-width: 400px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: clamp(40px, 5vw, 120px);
             width: 70%;
-        }
-        @media(min-width: $fhd) {
-            transform: translateX(80px);
         }
 
         img {

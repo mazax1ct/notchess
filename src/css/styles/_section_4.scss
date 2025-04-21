@@ -2,8 +2,8 @@
     background: url("../images/bg/section_4.jpg") no-repeat 50% 0 / cover;
     color: #fff;
     max-height: 1588px;
-    padding-top: clamp(40px, 5vw, 120px);
-    padding-bottom: clamp(40px, 5vw, 120px);
+    padding-top: clamp(40px, 5vw, 80px);
+    padding-bottom: clamp(40px, 5vw, 80px);
 
     .btn_2 {
         align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .slider {
-    margin: clamp(40px, 5vw, 120px) auto;
+    margin: clamp(40px, 5vw, 80px) auto;
     position: relative;
     z-index: 1;
     @media(max-width: $sm - 0.02px) {
